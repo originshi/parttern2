@@ -1,0 +1,11 @@
+{
+  "src\\my\\index.js": "src\\my\\index.js",
+  "src\\my\\rantal\\movie.js": "src\\my\\rantal\\movie.js",
+  "src\\my\\rantal\\price\\new.js": "src\\my\\rantal\\price\\new.js",
+  "src\\my\\rantal\\price\\custome.js": "src\\my\\rantal\\price\\custome.js",
+  "src\\my\\rantal\\price\\children.js": "src\\my\\rantal\\price\\children.js",
+  "src\\my\\rantal\\rental.js": "src\\my\\rantal\\rental.js",
+  "src\\my\\rantal\\price.js": "src\\my\\rantal\\price.js",
+  "src\\my\\rantal\\customer.js": "src\\my\\rantal\\customer.js",
+  "src\\my\\base.js": "src\\my\\base.js"
+}

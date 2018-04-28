@@ -1,0 +1,14 @@
+<div>
+        <select class="province">
+            <% data.data.forEach(function(n,i){%>
+                <% if(i!=0){ %>
+                    <option value="<%= n.name %>"><%= n.name %></option> 
+                    <% }%>
+             <% })%>
+        </select>
+        
+        <select class="city">
+            
+        </select>
+        <input type="text" class="detailedAddress">
+</div>

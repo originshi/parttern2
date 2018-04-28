@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>支付引导页</title>
+    <meta charset="utf-8">
+    <meta name="keyword" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="../../../resources/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../../../src/p/pay/pay-items/deposit_bfc/index.css">
+    <script src="../../../resources/r.js"></script>
+</head>
+
+<body>
+    <div class="header" id="J_Header">
+        <div class="header-inner"></div>
+    </div>
+    <div class="content">
+        <div class="td">
+            <h2>请选择入金通道：</h2>
+            <select id="J_SelectPass">
+                <option></option>
+            </select>
+        </div>
+        <div class="content-inner">
+            <form id="J_Form">
+                <ul>
+                    <li class="item" style="display: none;">
+                        <div class="wrapper ">
+                            <input type="text" class="first company-name" readonly tabIndex="-1" style="color:black" value="">
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">手机号码:</div>
+                        <div class="wrapper">
+                            <input type="text" class="phone form_phone" readonly tabIndex="-1" style="color:black" value="" placeholder="请输入绑定付款银行卡的手机号">
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">充值金额:</div>
+                        <div class="wrapper">
+                            <input type="text" class="num" value="" placeholder="请输入金额 单笔最低500美元 最高30000,美元">
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info">赠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;送:</div>
+                        <div class="wrapper J_BonusWrapper">
+                            <input type="text" class="extra-money" readonly value="" placeholder="— —（$）">
+                        </div>
+                        <div class="detail" id="J_Bonus">
+
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="info"></div>
+                        <div class="wrapper">
+                            <input type="submit" class="submit" value="生成订单">
+                        </div>
+                    </li>
+                    <li class="item last">
+                        <div class="info"></div>
+                        <div class="wrapper">
+                            <p class="statement">
+                                <input type="checkbox" class="check" checked="checked"> 
+                                <a class="statement statement-link" href="../statement.html">       我已阅读并同意《用户注册协议》
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../../src/lib/lib.min.js"></script>
+    <script src="../../../build/pay-items/deposit_bfc.js"></script>
+</body>
+
+</html>

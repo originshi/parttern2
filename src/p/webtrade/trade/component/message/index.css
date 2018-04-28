@@ -1,0 +1,9 @@
+.validate-wrapper.error .err {
+  display: block;
+}
+.validate-wrapper .err {
+  display: none;
+  color: #ff564e;
+  line-height: 24px;
+  font-size: 12px;
+}

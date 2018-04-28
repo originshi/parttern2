@@ -1,0 +1,17 @@
+
+<div class="slier_wraper">
+    <div class="progress">
+        
+    </div>
+    <span class="slider"></span>
+ <% var length=data.length+1,min=data.min,max=data.max,step=data.step;
+       for(let i=0;i<length;i++){%>
+            
+    <span class="slider_line <%= i==0 ? 'slider_line_first' : i==length-1 ? 'slider_line_last' :'' %>"></span>
+
+          
+    <span class="slider_label"><%= 
+        i==0 ? "$"+min : i==length-1 ? "$"+max : "$"+i*step
+       %></span>
+   <%}%>
+</div>

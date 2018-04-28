@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <title>壹号金融</title>
+
+        <link href='../../../src/p/webtrade/l-p/font/stylesheet.css' rel='stylesheet' type='text/css'/>
+        <link rel="icon" href="../../../img/l-p/firstbrokerIcon.jpg">
+        <link rel="apple-touch-icon" href="./landing_page/oss/images/favicons/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="../../../src/p/webtrade/l-p/bootstrap.min.css">
+        <script src="../../../src/lib/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="../../../resources/r.js"></script>
+        <script>
+                var _hmt = _hmt || [];
+                (function() {
+                 var hm = document.createElement("script");
+                 hm.src = "https://hm.baidu.com/hm.js?1a543549dc444c62d561274b378a8a6e";
+                 var s = document.getElementsByTagName("script")[0];
+                 s.parentNode.insertBefore(hm, s);
+                })();
+        </script>
+        <style>
+            .com {
+                width: 100%;
+                position: relative;
+                min-width: 1366px;
+            }
+
+            .center {
+                margin: 0px auto;
+                width: 1089px;
+                z-index: 100;
+                position: relative;
+                /*border: 1px solid;*/
+            }
+
+            img {
+                width: 100%;
+            }
+
+
+            body, div {
+                margin: 0;
+                padding: 0;
+                font-family: 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+            }
+
+            ul, p {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            ul {
+                margin-top: 30px;
+            }
+
+            .max_font {
+                font-size: 42px;
+                color: #ffffff;
+                font-family:'PingFangSC109a019ad41c0cd';
+            }
+
+            .mid_font {
+                font-size: 28px;
+                padding: 15px 0;
+                font-family: 'fzzhongdengxian-z07_regular';
+                color: #a3a3a3;
+            }
+
+            .min_font {
+                font-size: 28px;
+            }
+
+            .two .cent {
+
+                width: 1089px;
+                /*height: 1038px;*/
+                position: absolute;
+                top: 0;
+            }
+
+
+            .content {
+                color: white;
+            }
+
+            .bottom_ {
+                margin-top: 43px;
+                position: relative;
+            }
+
+            .bottom_ div {
+                width: 226px;
+                height: 274px;
+                /*border: 1px solid;*/
+                /*float: left;*/
+                /*margin-left: 52px;*/
+                /*padding: 55px 10px 0px 20px;;*/
+
+            }
+
+            .bottom_ p {
+                line-height: 22px;
+                color: white;
+            }
+
+
+            body {
+                /*border: 1px solid;*/
+                min-width: 1366px;
+                margin: 0 auto;
+                max-width: 1920px;
+                /*overflow: hidden;*/
+                /*clear:both;*/
+                background-color: #ffffff;
+            }
+
+            .pop-body form .field-wrp input {
+                box-shadow: none;
+            }
+
+            form span {
+                font-family: 微软雅黑;
+            }
+
+            .one1 {
+                /*border: 1px solid;*/
+                height: 28px;
+                width: 100%;
+                padding: 25px 0 55px;
+            }
+
+            .form-input{
+                box-sizing: border-box;
+                border: 1px solid transparent;
+                box-shadow: none;
+                border-radius: 0;
+                width: 100%;
+                height: 0.54rem;
+                line-height: 0.54rem;
+                padding: 0px 0.2rem;
+                font-size: 0.2rem;
+                font-weight: 300;
+                outline: 0;
+                border-bottom-color: #dcdcdc;
+                -webkit-appearance: none;
+                line-height: 1.42857143;
+                color: #b1b1b1;
+                background-color: transparent;
+                background-image: none;
+                font-family: Microsoft YaHei;
+            }
+            .form-input-noborder{border: 0;}
+            .fxc-hidden {
+                display: none;
+            }
+            .form-input-blod{
+                color: #ffffff;
+                font-family: Microsoft YaHei;
+            }
+            .fxc-autocomplete {
+                overflow: auto;
+                position: absolute;
+                z-index: 1;
+                top: calc(100% - 1px);
+                right: 0;
+                left: 0;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-left: 0;
+                max-height: 240px;
+                list-style: none;
+            }
+            .form-submit{
+                background-color: #12e881;
+                box-sizing: border-box;
+                color: #fff;
+                display: block;
+                border-radius: 6px;
+                width: 100%;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                font-size: 0.24rem;
+                outline: 0;
+                -webkit-appearance: none;
+                border: 0;
+                cursor: pointer;
+                margin-bottom: 0;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+            .pop-body h1{
+                margin: 0;
+                font-size: 0.24rem;
+                padding-top: 0.23rem;padding-bottom: 0.43rem;
+                font-family: Adobe 黑体 Std -WEBKIT-PICTOGRAPH;
+                font-weight: bold;
+            }
+
+            .right{
+                width: 3.45rem;float:right;position:absolute;left:11.33rem;top: 1.2rem;z-index: 99;
+            }
+            .right .top-title{
+                width: 100%;padding-bottom: 0.1rem;font-size: 0.24rem;color: white;text-align: center;letter-spacing: 4px;
+            }
+            .fxc-common-errors {
+                color: #fff;
+                background-color: #e54343;
+            }
+            .fxc-common-errors {
+                margin-top: 0;
+                padding: 10px;
+                list-style: none;
+            }
+            .fxc-common-errors li {
+                margin-bottom: 5px;
+            }
+            .error .fxc-error-msg{
+                display:block;
+            }
+            .fxc-error-msg {
+                display: none;
+                font-size: 11px;
+                padding: 5px 10px;
+                margin: 0 10px;
+                border-bottom-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+                color: #fff;
+                background-color: #e54343;
+            }
+
+            .top .underline{background-color: #eeeeee;width: 225px;height: 3px;margin-top: 38px;margin-bottom: 29px;}
+
+            .input-box{padding: 0 0.1rem;border-radius: 5px;background:rgba(0,0,0,0.35) none repeat scroll !important; background:#000; filter:Alpha(opacity=35);margin-bottom: 0.2rem;}
+            .two{text-align: center;padding-top: 64px;padding-bottom: 53px;}
+            .two img{width: 295px;margin: 0 auto;}
+            .three{width: 995px;margin: 0 auto;min-width: 995px;}
+            .three .con1{position: absolute;left: 0;top: 167px;width: 229px;}
+            .three .con2{position: absolute;left: 255px;top: 167px;width: 229px;}
+            .three .con3{position: absolute;left: 513px;top: 167px;width: 229px;}
+            .three .con4{position: absolute;left: 767px;top: 167px;width: 229px;}
+            .three p.txt-title{font-size: 20px;color: #010000;text-align: center;}
+            .three p.txt-content{font-size: 16px;color: #010000;text-align: center;padding-top: 15px;}
+            .four{text-align: center;padding-top: 71px;padding-bottom: 28px;}
+            .four img{width: 408px;margin: 0 auto;}
+            
+            .five{width: 702px;margin: 0 auto;min-width: 702px;}
+            .five .con1{position: absolute;left: 0;top: 26px;width: 100%;}
+            .five .con2{position: absolute;left: 0;top: 175px;width: 100%;}
+            .five .con3{position: absolute;left: 0;top: 324px;width: 100%;}
+            .five p.txt-title{font-size: 20px;color: #000000;text-align: center;}
+            .six{text-align: center;padding-top: 49px;padding-bottom: 55px;}
+            .six img{width: 352px;margin: 0 auto;cursor: pointer;}
+            .line{width: 895px;height: 1px;background-color: #000;margin: 0 auto;}
+            .seven{text-align: center;padding-top: 55px;padding-bottom: 50px;}
+            .seven img{width: 207px;margin: 0 auto;cursor: pointer;}
+            .eight .txt-con{width: 995px;margin: 0 auto;padding-top: 0.47rem;position: absolute;left: 0;right: 0;top: 0;}
+            .eight .txt1{font-size: 0.34rem;color: #ffbf2d;}
+            .eight .txt2{font-size: 0.28rem;color: #fff;opacity: 0.5;padding-top: 0.19rem;}
+            .eight .txt3{font-size: 0.2rem;color: #ffffff;padding-top: 0.2rem;padding-bottom: 0.27rem;line-height: 1.5;}
+            .eight .txt4{font-size: 0.18rem;color: #ffffff;padding-bottom: 0.05rem;line-height: 1.5;}
+            .eight .txt4:last-child{padding-bottom: 0;}
+            .dot{background:url(../../../img/l-p/images/r2/dot.png) no-repeat center left; background-size: 0.08rem 0.08rem;width: 0.08rem;height: 0.08rem;display:inline-block; vertical-align:middle;padding-right: 0.2rem;}
+            .nine{padding-top: 0.22rem;}
+            .nine .con1{position: absolute;left: 8.71rem;top: 0.74rem;}
+            .nine .con2{position: absolute;left: 4.6rem;top: 6.1rem;}
+            .nine .txt1{font-size: 0.34rem;color: #000000;}
+            .nine .txt2{font-size: 0.28rem;color: #000000;opacity: 0.5;padding-top: 0.19rem;}
+            .nine .txt3{font-size: 0.2rem;color: #010101;padding-top: 0.2rem;padding-bottom: 0.27rem;line-height: 1.5;}
+            .nine .txt4{font-size: 0.18rem;color: #000000;padding-bottom: 0.05rem;line-height: 1.5;}
+            .nine .txt4:last-child{padding-bottom: 0;}
+            .dot{background:url(../../../img/l-p/images/r2/dot.png) no-repeat center left; background-size: 0.08rem 0.08rem;width: 0.08rem;height: 0.08rem;display:inline-block; vertical-align:middle;padding-right: 0.2rem;}
+            .com-toast {
+                position: fixed;
+                left: 50%;
+                bottom: 50%;
+                z-index: 99999;
+                padding: 5px 10px;
+                background-color: rgba(0, 0, 0, 0.65);
+                color: #fff;
+                font-size: 14px;
+                line-height: 1.5;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                -ms-border-radius: 2px;
+                -o-border-radius: 2px;
+                border-radius: 2px;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                }
+            .dot1{background:url(../../../img/l-p/images/r2/dot1.png) no-repeat center left; background-size: 0.08rem 0.08rem;width: 0.08rem;height: 0.08rem;display:inline-block; vertical-align:middle;padding-right: 0.2rem;}
+        </style>
+        <link rel="stylesheet" href="../../../src/p/webtrade/l-p/firstbkr-1/index.css">
+    </head>
+    <body>
+
+        
+        <script>
+            function fontS() {
+                var html = document.documentElement;
+                if ($(window).width() < 1920) {
+                    var whdef = 100 / 1920;// 表示1920的设计图,使用100PX的默认值
+                    var wH = window.innerHeight;// 当前窗口的高度
+                    var wW = window.innerWidth;// 当前窗口的宽度
+                    rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+                    if(rem < 70){
+                        rem = 70;
+                    }
+                    $('html').css('font-size', rem + "px");
+                } else {
+                    html.style.fontSize = "100px";
+                }
+
+            }
+            function getDomainQuery(url) {
+                var d = [];
+                var st = url.indexOf('//', 1);
+                var _domain = url.substring(st + 1, url.length);
+                var et = _domain.indexOf('/', 1);
+                d.push(_domain.substring(1, et));
+                d.push(_domain.substring(et + 1, url.length));
+                return d
+            }
+
+            var ykey;
+
+            function route() {
+                var eg = [];
+                eg.push(['baidu', 'word']);
+                //        eg.push(['baidu', 'wd']);
+                eg.push(['google', 'q']);
+                eg.push(['sm', 'q']);//神马手机端
+                eg.push(['soso', 'w']);
+                eg.push(['yodao', 'q']);
+                eg.push(['bing', 'q']);
+                eg.push(['yahoo', 'q']);
+                eg.push(['sogou', 'keyword']);
+                //        eg.push(['sogou', 'query']);
+                eg.push(['gougou', 'search']);
+                eg.push(['360', 'q']);
+                eg.push(['so', 'q']);//360手机端
+
+                var dq = getDomainQuery(document.referrer);
+                var keyword = null;
+                var grep = null;
+                var str = null;
+
+                for (var el in eg) {
+                    var s = eg[el];
+                    var DandQ = String(s).split(","); //字符分割
+                    if (dq[0].indexOf(DandQ[0]) > 0) {
+                        eval("grep=/" + DandQ[1] + "\=.*\&/i;");
+                        str = dq[1].match(grep);
+                        keyword = str.toString().split("=")[1].split("&")[0];
+                        keyword = decodeURIComponent(keyword);
+                        ykey = keyword;
+                        //            alert(keyword);
+                        return false;
+                    }
+                }
+            }
+            fontS();
+            route();
+            console.log(ykey)
+            if (ykey == null) {
+                ykey = '';
+            }
+        </script>
+        
+        <div style="min-width: 1366px;max-width:1920px;margin: 0 auto">
+            <header>
+                <img src="../../../img/l-p/images/r2/logo.png" alt="">
+                <span>客服热线：0510-66611492</span>
+            </header>
+            <div class="com one">
+                
+                <img src="../../../img/l-p/images/r2/1.png">
+                <div class="right">
+                    <div class="top-title">
+                        免费开设账户
+                    </div>
+                    <div class="pop-body" style="text-align: left;padding-top: 0;">
+                        <form id="my-form" class="form fxc-pending J_Form" method="post" action="" target="_parent">
+                            <div class="input-box">
+                                <div class="form-row">
+                                    <div class="form-label-wrapper">
+                                    </div>
+                                    <div class="form-input-wrapper">
+                                            <input class="form-input J_Focus phone J_Phone tel" type="text" data-focus='phone' placeholder="手机号"></input>
+
+                                        
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label-wrapper">
+                                    </div>
+                                    <div class="form-input-wrapper">
+                                            <input type="password" class="form-input J_Focus passeord J_Passeord num" data-focus='password' placeholder="登录密码">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-label-wrapper">
+                                    </div>
+                                    <div class="form-input-wrapper">
+                                            <input type="text" class="form-input J_Focus email J_Email num" data-focus='email' placeholder="设置电子邮箱">
+                                    </div>
+                                </div>
+                                <div class="form-row" data-fxc-pending-for="login" style="display:none">
+                                    <div class="form-label-wrapper">
+                                    </div>
+                                    <div class="form-input-wrapper">
+                                            <input type="text" class="form-input J_Focus refer J_Refer" data-focus='refer' placeholder="请输入邀请码">
+                                    </div>
+                                </div>
+                                <div class="form-row" data-fxc-pending-for="login">
+                                    <div class="form-label-wrapper">
+                                    </div>
+                                    <div class="form-input-wrapper imageCodeWrapper">
+                                            <input type="text" class="form-input imageCode J_ImageCode" placeholder="验证码" disabled>
+                                            <div class="imageCode-wrapper">
+                                                    <img class="img-code J_ImgCode" id="J_ImgCode" src="../../../img/image-code.png">
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="form-row" data-fxc-pending-for="login">
+                                        <div class="form-label-wrapper">
+                                        </div>
+                                        <div class="form-input-wrapper phoneCodeWrapper">
+                                                <input type="text" class="form-input J_Focus phoneCode J_PhoneCode" data-focus='vcode' placeholder="手机验证码">
+                                                <input class="form-input getCode J_GetCode" type="button" value="获取验证码" disabled>
+                                        </div>
+                                </div>                                                       
+                            </div>
+                            <div class="form-actions">
+                                <input class="form-submit submit J_Submit J_FirstLoginSubmit" disabled type="submit" value="注册"  >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="com two">
+                <img src="../../../img/l-p/images/r2/2.png">
+            </div>
+            <div class="com three">
+                <img src="../../../img/l-p/images/r2/3.png">
+                <div class="txt-con con1">
+                    <p class="txt-title">涨跌双向交易</p>
+                    <p class="txt-content">
+                        外汇市场有做空机制<br>
+                        判断外汇走势<br>
+                        买涨买跌都能赚
+                    </p>
+                </div>
+                <div class="txt-con con2">
+                    <p class="txt-title">全天随时交易</p>
+                    <p class="txt-content">
+                        每周一6点到周六5点可交易<br>
+                        随时买入卖出，交易频次不限<br>
+                        让您随时抓住行情 
+                    </p>
+                </div>
+                <div class="txt-con con3">
+                    <p class="txt-title">支持多终端平台</p>
+                    <p class="txt-content">
+                        PC端,移动端与浏览器等多平台<br>
+                        订单在任何时段均可被执行  
+                    </p>
+                </div>
+                <div class="txt-con con4">
+                    <p class="txt-title">提供专业培训</p>
+                    <p class="txt-content">
+                        驰骋外汇市场数十年<br>
+                        丰富实战经验的首席分析师<br>
+                        为交易者提供配套的交易策略    
+                    </p>
+                </div>
+            </div>
+            <div class="com four">
+                <img src="../../../img/l-p/images/r2/4.png">
+            </div>
+            <div class="com five">
+                <img src="../../../img/l-p/images/r2/5.png">
+                <div class="txt-con con1">
+                    <p class="txt-title">1.&nbsp;&nbsp;&nbsp;&nbsp;马上注册账户，用模拟金模拟实战交易，初步了解行业知识</p>
+                </div>
+                <div class="txt-con con2">
+                    <p class="txt-title">2.&nbsp;&nbsp;&nbsp;&nbsp;通过分析师专业在线培训，多面了解行业知识及交易方法</p>
+                    
+                </div>
+                <div class="txt-con con3">
+                    <p class="txt-title">3.&nbsp;&nbsp;&nbsp;&nbsp;建立自己成熟的交易系统，开启交易赚钱之旅</p>
+                </div>
+            </div>
+            <div class="com six">
+                <img src="../../../img/l-p/images/r2/6.png" class="goto-reg">
+            </div>
+            <div class="line"></div>
+            <div class="com seven">
+                <img src="../../../img/l-p/images/r2/7.png">
+            </div>
+            <div class="com eight">
+                <img src="../../../img/l-p/images/r2/8.jpg">
+                <div class="txt-con">
+                    <p class="txt1">关于我们</p>
+                    <!-- <p class="txt2">About MetaTrader 4</p> -->
+                    <p class="txt3">
+                            壹号金融（Firstbroker 简称FB）是一家专注于全球化的全品种交易平台，<br/>
+                            为全球客户提供外汇、贵金属、原油、股指等交易品种。直通包括纽约、<br/>
+                            伦敦、新加坡、东京等金融中心在内的全球活跃交易市场，使投资配置更<br/>
+                            加灵活。FB以倍受信赖的经验与实力一直在世界范围内享有盛誉，成为行<br/>
+                            业的领先者。
+                        <br>
+                        
+                    </p>
+                    <p class="txt4"><i class="dot"></i>NFA监管——壹号金融受美国全国期货协会授权并监管，监管牌照号：0509664，FB严格遵守NFA的资金规定，公司与客户资金严格分离。
+                    </p>
+                    <p class="txt4"><i class="dot"></i>资金安全——壹号金融与国际投资银行和机构合作，具备充足资本储备，公司资本与客户资金完全分离，保障客户资金安全。
+                    </p>
+                    <p class="txt4"><i class="dot"></i>合作伙伴——壹号金融与Citibank、Barclays、Morgan Stanley、UBS等各大国际投行合作，直通式报价，为客户挖掘更优的价格。
+                    </p>
+                    <p class="txt4"><i class="dot"></i>随时交易——壹号金融绝对执行无重复报价、不拒绝订单的交易执行原则，投资者通过全球各区域交易服务器随时随地交易。</p>
+                    <p class="txt4"><i class="dot"></i>出入金便捷——壹号金融拥有更周到与全面的出入金方案，让所有客户，都能以更简单的方式管理资金。</p>
+                </div>
+            </div>
+            <div class="com nine">
+                <img src="../../../img/l-p/images/r2/9.png">
+                <div class="txt-con con1">
+                    <p class="txt1">多平台系统</p>
+        
+                    <p class="txt3">
+                            壹号金融平台是我们自主研发的一款实用性交易平台，符合大陆交易者习<br/>
+                            惯。我们研发的桌面端PC、网页端H5及移动端APP，让客户随时随地，<br/>
+                            畅快交易。无论你是交易新手还是专家，都能满足你的需求。
+                    </p>
+                    <p class="txt4"><i class="dot"></i>提供外汇、贵金属、原油、股指等交易品种</p>
+                    <p class="txt4"><i class="dot"></i>即时报价，及时买卖</p>
+                    <p class="txt4"><i class="dot"></i>优质的深度交易系统</p>
+                    <p class="txt4"><i class="dot"></i>层级保证金交易方式</p>
+                    <p class="txt4"><i class="dot"></i>专业/极速两种交易模式自如切换</p>
+                    
+                    </p>
+                </div>
+                <div class="txt-con con2">
+                    <p class="txt1">其他功能模块</p>
+                    
+                    <p class="txt3">
+                            在壹号金融不仅能随时随地交易外汇、黄金等全部交易品<br/>
+                            种，壹号金融还为投资者提供了行业实时资讯、经济日历、<br/>
+                            跟单等功能，无论您是行业新人还是交易高手，都能在壹号<br/>
+                            金融体会到交易的乐趣。
+
+                    </p>
+                    <p class="txt4"><i class="dot1"></i>复制高手信号，智能跟单</p>
+                    <p class="txt4"><i class="dot1"></i>社区化投资模式，容易上手</p>
+                    <p class="txt4"><i class="dot1"></i>随时查看行业资讯，预判走势</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <script>
+            $(function(){
+                $(".goto-reg").click(function(){
+                    $("html,body").animate({scrollTop: "0px"}, 500);
+                });
+            })
+        </script>
+        <script src="../../../build/webtrade/l-p/firstbkr-1.js"></script>
+    </body>
+</html>

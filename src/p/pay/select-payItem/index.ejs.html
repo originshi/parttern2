@@ -1,0 +1,8 @@
+<% data.forEach(function(item, index) { %>
+	<li>
+		<a class="pay-item" href="./pay-items/<%= item.code %>.html?code=<%= item.code %>">
+			<span class="name">支付通道-<%= parseFloat(index) + 1 %></span>
+			<span class="icon"></span>
+		</a>
+	</li>
+<% }) %>

@@ -1,0 +1,8 @@
+1. npm run start
+2. npm sun build
+
+
+
+
+html文件   在s目录下 为什么项目,项目下为具体的 html文件夹下面则是具体的html
+js文件    在src / p   项目文件   具体的js文件夹  具体的文件  
