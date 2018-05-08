@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        #main{
+            float: left;
+            margin:100px;
+            border: 100px solid red;
+            padding:100px;
+            width: 100px;
+            height:100px;
+            background: yellow;
+        }
+        #aside{
+            float: left;
+            width:calc(100% - 700px);
+            width:1fr;
+            height:100px;
+            background-color: blue;
+        }
+        
+    </style>
+    <div id="main">
+        <div class="one">1</div>
+        <div class="two">2</div> 
+    </div>
+    <div id="aside">
+
+    </div>
+    <script>
+        var dMain=document.querySelector("#main");
+
+        </script>
+</body>
+</html>

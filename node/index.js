@@ -21,7 +21,7 @@ let server=http.createServer(function(req,res){
        //application/json   text-plain字符串
        res.writeHead(200,{"content-type":"text-plain","access-control-allow-origin":"*"});
        setTimeout(()=>{
-        res.write(data);
+        res.write(new Date()+'');
         res.end();
        },3000)
       
