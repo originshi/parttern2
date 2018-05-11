@@ -11,9 +11,28 @@
 
 <body>
     观察者
+    <style>
+        #outer{
+            background:grey;
+            margin-top:100px;
+        }
+    #mocha{
+        width:100px;
+        height:100px;
+        margin:100px;
+        padding:100px;
+        border:100px solid red;
+        background:yellow;
+        background-clip: content-box;
+    }
+    </style>
+    <div id='outer'>
+        <div id="mocha"></div>
+    </div>
     
+    <div id='div'></div>
     <script src="../../../src/lib/jquery-1.11.2.min.js"></script>
-    
+    <script src="../../../demo08/mocha.js"></script>
 </body>
 
 </html>
