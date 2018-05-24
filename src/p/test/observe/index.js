@@ -226,15 +226,128 @@ class Test {
 // $(window).scroll((e)=>{
 //   console.log(e)
 // })
-import A from './graph';
+//import A from './graph';
 //new A();
-import Immu,{Map as map,fromJS,List} from 'immutable';
-let m=map({a:1,b:2});
-let n=map({a:1,b:2});
-let o={a:1};
-let o1=fromJS(o);
-let o2=o1;
-o2=o2.set('a',222);
+//import Immu,{Map as map,fromJS,List} from 'immutable';
+// let m=map({a:1,b:2});
+// let n=map({a:1,b:2});
+// let o={a:1};
+// let o1=fromJS(o);
+// let o2=o1;
+// o2=o2.set('a',222);
+// console.log(o2.set('a',333),o2)
+// console.log(m.toJS(),o1==o2);
+// console.log(Immu.is(m,n));
+// let mm=map();
+// let key={a:1};
+// mm=mm.set(key,{value:1});
+// let jsmm=mm.toJS();
+// console.log(mm.toJS(),mm.get(key));
+// function insert(n,arr){
+// 	let newArr=[n];
+//     a:for(let i=0 , charushu;charushu=arr[i++];){
+// 		n=[...newArr].pop();
+//         if(charushu<n){
+// 			let j=newArr.length-2;
+// 			b:for(let newArrItem;newArrItem=newArr[j];j--){
+// 				if(charushu>newArrItem){
+// 					newArr=[...newArr.slice(0,j+1),charushu,...newArr.slice(j+1)];					
+// 					break b;
+// 				}else if(j==0){
+// 					newArr=[charushu,...newArr.slice()];				
+// 				}
+				
+// 			}
+// 			//newArr.push(item);
+// 			//n=item;
+// 		}else{
+// 			newArr.push(charushu);
+// 		}
+		
+// 	}
+// 	return newArr;
+// }
+// let arr=[23,4,7,12,45,3,6,9,10,2];
+// console.log(insert(5,arr));
+// function quick(oldarr){
+// 	if(oldarr.length==1 || oldarr.length==0){return oldarr};
+// 	let arr=oldarr.slice();
+// 	let last=arr.pop();
+// 	let left=[],right=[];
+// 	for(let i=0,arrItem;i<arr.length;i++ ){
+// 		 arrItem=arr[i]
+// 		 if(arrItem>last){
+// 			right.push(arrItem);
+// 		 }else{
+// 			left.push(arrItem);
+// 		 }
+// 	}
+// 	// /console.log(...quick(left),last,...quick(right))
+// 	return [...quick(left),last,...quick(right)];
+// }
+// console.log(quick(arr))
+import m from '../../../common/mescroll/mescroll.js';
+console.log(m)
+new m({el:'mescroll',refresh:()=>{
+	return new Promise((res,rej)=>{
+		setTimeout(()=>{
+		 res(1111111);
+		},3000)
+	}).then((data)=>{
+		console.log(1,data);
+		$('ul').html(`
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+		<li>11</li>
+		<li>12</li>
+		<li>13</li>
+		<li>14</li>	
+		`)
+		return data;
+	})
+ 
+ },upload:(page)=>{
+	 console.log(page)
+	return new Promise((res,rej)=>{
+		setTimeout(()=>{
+		// 	$('ul').html(`
+		// <li>1</li>
+		// <li>2</li>
+		// <li>3</li>
+		// <li>4</li>
+		// <li>5</li>
+		// <li>6</li>
+		// <li>7</li>
+		// <li>8</li>
+		// <li>9</li>
+		// <li>10</li>
+		// <li>11</li>
+		// <li>12</li>
+		// <li>13</li>
+		// <li>14</li>	
+		// `)
+		 res({l:0,n:false});
+		},3000)
+	}).then(({l,n})=>{
+		console.log('上拉1',length);
+		return {l,n};
+	},()=>{
 
-console.log(m.toJS());
-console.log(Immu.is(m,n))
+	})
+ 
+ },
+page:{
+	num:0,
+	size:5
+}})
+
+
+

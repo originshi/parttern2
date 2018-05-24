@@ -1,17 +1,17 @@
 // 白标的code
 function getWhitelabelCodename() {
-    return "firstbroker";
+    return "admins";
 }
 
 // 白标的移动端的注册入口
 function getMobileRegisterLink() {
-    return "https://t.firstbkr.com/firstbroker/s/my-guide/firstbroker/register.html?inviteCode=&from=webtrade";
+    return "http://t.fxadm.com/admins/s/my-guide/admins/register.html?inviteCode=&from=webtrade";
 }
 
 // 白标的LOGO地址, 最好是http
 function getLogoUrl() {
     // return "../../img/xinwaihui/logo.png";
-    return "https://wt-firstbroker.firstbkr.com/firstbroker/img/wl/firstbroker/pay.png";
+    return "http://wt-admins.fxadm.com/admins/img/wl/admins/admins_aboutus.png";
 }
 
 // 如果需要更换logo背景颜色, 则可以设置不同的class并修改less
@@ -20,21 +20,34 @@ function getLogoBackgroudStyle() {
 }
 
 function getHasTrueInfo() {
-    return false;
-}
-
-//判断是否需要客服按钮
-function getService(){
     return true;
 }
 
-function getTradingViewDefaultSymbol() {
-    return 'EURUSD'
+// 是否为跳转第三方支付平台支付
+function getIsThirdPartyPay() {
+    return false;
 }
 
 // 是否使用新的支付通道
 function getIsNewpay() {
-    return true
+    return true;
+}
+
+// 是否显示银行卡支行网点
+function getHasExtractWd() {
+    return true;
+}
+
+function getPayWay() {
+    return 'deposit_shande'
+}
+
+function getIsThirdPartyPayUrl() {
+    return ''
+}
+
+function getTradingViewDefaultSymbol() {
+    return 'EURUSD'
 }
 
 // 是否为演示
@@ -44,34 +57,16 @@ function getIsDemo() {
 
 // 同getWhitelabelCodename
 function getWLName() {
-    return "firstbroker";
+    return "admins";
 }
 
-// 是否为跳转第三方支付平台支付
-function getIsThirdPartyPay() {
-    return false;
-}
-
-// 是否显示银行卡支行网点
-function getHasExtractWd() {
-    return true;
-}
-
-function getPayWay() {
-    return 'depost_daddy'
-}
-
-function getIsThirdPartyPayUrl() {
-    return '/v1/user/pay/deposit_payease/?'
-}
-
-// 注册soufirstbrokere
-function getRegisterSoufirstbrokere() {
+// 注册souzgjwdce
+function getRegisterSouzgjwdce() {
     return "webtrade";
 }
 
 // 网页注册的邀请人
-function getRegisterRefefirstbrokerode() {
+function getRegisterRefezgjwdcode() {
     return "";
 }
 
@@ -96,13 +91,13 @@ function getRegisterDefaultNickname() {
     var minite = date.getMinutes();
     var second = date.getSeconds();
     var millsecond = date.getMilliseconds();
-    var nickname = '壹号金融_' + minite + '' + second + '' + millsecond;
+    var nickname = 'ADMINIS_' + minite + '' + second + '' + millsecond;
     return nickname;
 }
 
 // 交易页面的title
 function getTradePageTitle() {
-    return "壹号金融金融专业交易";
+    return "ADMINS金融专业交易";
 }
 
 //注册增金
@@ -112,26 +107,26 @@ function getRegisterGold() {
 
 // PC版交易页面的地址 (需要iframe)
 function getTradePageUrl() {
-    return 'https://wt-firstbroker.firstbkr.com/firstbroker/s/webtrade/trade.html';
+    return 'http://wt-admins.fxadm.com/admins/s/webtrade/trade.html';
 }
 
 // PC版注册页面的地址 (需要iframe)
 function getRegisterPageUrl() {
-    return 'https://wt-firstbroker.firstbkr.com/firstbroker/s/webtrade/register.html';
+    return 'http://wt-admins.fxadm.com/admins/s/webtrade/register.html';
 }
 
 // PC版入金页面 (需要iframe)
 function getDepositButtonHref() {
-    return "https://wt-firstbroker.firstbkr.com/firstbroker/s/pay/guide.html";
+    return "http://wt-admins.fxadm.com/admins/s/pay/guide.html";
 }
 
 // PC 版查看支持银行bank-list (需要iframe)
 function getBankListHref() {
-    return "https://wt-firstbroker.firstbkr.com/firstbroker/s/pay/bank-list.html";
+    return "http://wt-admins.fxadm.com/admins/s/pay/bank-list.html";
 }
 
 function getDefaultAvatarUrl() {
-    return "https://wt-firstbroker.firstbkr.com/firstbroker/img/wl/firstbroker/pay.png";
+    return "http://wt-admins.fxadm.com/admins/img/wl/admins/admins_aboutus.png";
 }
 
 function getHomeUrl() {
@@ -139,73 +134,73 @@ function getHomeUrl() {
 }
 
 function getCompanyName() {
-    return "壹号金融";
+    return "ADMINS";
 }
 
 //ajax.js: groupPriceUrl
 function getGroupPriceUrl() {
-    return 'https://price.firstbkr.com/v1/price/current';
+    return 'http://price.fxadm.com/v1/price/current';
 }
 
 //ajax.js: priceUrl
 function getPriceUrl() {
-    return 'https://price.firstbkr.com/v2/price/current';
+    return 'http://price.fxadm.com/v2/price/current';
 }
 
 //ajax.js: candleUrl
 function getCandleUrl() {
-    return 'https://price.firstbkr.com/v3/price/candle';
+    return 'http://price.fxadm.com/v3/price/candle';
 }
 
 //ajax请求前缀：正式环境
 function getAjaxPrefix() {
-    return "http://122.70.128.232:8100" || 'https://api.firstbkr.com';
+    return 'http://api.fxadm.com';
 }
 
 //邀请链接
 function getInvitePrefix() {
-    return 'https://t.firstbkr.com/i/';
+    return 'http://t.fxadm.com/i/';
 }
 
 //安卓分享前缀
 function getAndroidSharePrefix() {
-    return 'https://t.firstbkr.com';
+    return 'http://t.fxadm.com';
 }
 
 //头像链接
 function getAvatarUrl() {
-    return 'https://static.firstbkr.com/';
+    return 'http://static.fxadm.com/';
 }
 
 //stompUrl
 function getStompUrl() {
-    return 'wss://rtprice.firstbkr.com:61615/stomp';
+    return 'ws://price.fxadm.com:61613/stomp';
 }
 
 //frame.js 147 
 function getFrameIndexofUrl() {
-    return 't.firstbkr.com';
+    return 't.fxadm.com';
 }
 
 //chart/index.js : UDFCompatibleDatafeed( ..url )
 function getUDFCompatibleDatafeedUrl() {
-    return 'https://price.firstbkr.com/tradingview';
+    return 'http://price.fxadm.com/tradingview';
 }
 function getQuoteHelperUrl() {
-    return 'wss://rtprice.firstbkr.com:61615/stomp';
+    return 'ws://price.fxadm.com:61613/stomp';
 }
 function getChartStorageUrl() {
-    return 'https://api.firstbkr.com/v1/advchart';
+    return 'http://api.fxadm.com/v1/advchart';
 }
 
 //zhufeng\cooperation\index.js 109
 function getFeedbackUrl() {
-    return 'https://api.firstbkr.com/v1/feedback/';
+    return 'http://api.fxadm.com/v1/feedback/';
 }
 
 //\p\zhufeng\index.js: 135
 function getV2priceCurrentUrl() {
-    return 'https://price.firstbkr.com/v2/price/current';
+    return 'http://price.fxadm.com/v2/price/current';
 }
 
 //出金提示文案
@@ -218,13 +213,13 @@ function getExtraHtml() {
         <p>4.交易完成后，请保留交易编号作为备档。</p>\
         <p>5.通常在收到客户款项后15分钟内存入客户交易账户。</p>\
         <p>6.交易结算只限使用银联卡。</p>\
-        <p>7.每次最低交易金额为500美元，每次最高交易金额为30,000美元。</p>\
+        <p>7.每次最低交易金额为80美元，每次最高交易金额为30,000美元。</p>\
     ';
 }
 
 function getStatementContent() {
-    return '<h2>壹号金融金融</h2>\
-            <p>壹号金融金融是由顶尖交易服务团队为初入市场的投资者量身打造的交易学习产品。全球首创的声控交易，喊“涨” “跌”便可下单，极优化了交易体验，并在交易中融入学习模式，让初级投资者轻松掌握技巧，成为投资达人。 壹号金融金融致力于为投资者搭建更简单、更安全、更便捷的学习环境，引导投资者步步为赢的完成交易！</p>\
+    return '<h2>ADMINS金融</h2>\
+            <p>ADMINS金融是由顶尖交易服务团队为初入市场的投资者量身打造的交易学习产品。全球首创的声控交易，喊“涨” “跌”便可下单，极优化了交易体验，并在交易中融入学习模式，让初级投资者轻松掌握技巧，成为投资达人。 ADMINS金融致力于为投资者搭建更简单、更安全、更便捷的学习环境，引导投资者步步为赢的完成交易！</p>\
             <div class="believe">\
                 <p>我们相信，学习投资可以很简单！</p>\
                 <p>我们知道，交易决策可以更轻松！</p>\
@@ -232,11 +227,11 @@ function getStatementContent() {
                 <p>我们宗旨，创造极致交易体验！</p>\
             </div>\
             <div>\
-                <p>壹号金融金融是一家为零售及机构客户提供外汇交易及相关服务的主要环球供应商。</p>\
+                <p>ADMINS金融是一家为零售及机构客户提供外汇交易及相关服务的主要环球供应商。</p>\
             </div>\
             <div>\
                 <p>客户资金隔离存放: </p>\
-                <p>所有壹号金融金融的零售客户的资金必须与公司自身资金完全隔离，并单独放置于全球顶级银行。同时我们还与每家银行建立信托担保，以确保客户资金与银行资产隔离，不被用作银行的投资操作。</p>\
+                <p>所有ADMINS金融的零售客户的资金必须与公司自身资金完全隔离，并单独放置于全球顶级银行。同时我们还与每家银行建立信托担保，以确保客户资金与银行资产隔离，不被用作银行的投资操作。</p>\
             </div>\
             <div>\
                 <p>优势与特点: </p>\
@@ -266,8 +261,8 @@ function addDefault (w) {
 }
 
 function getRiskMsg () {
-    return '<p class="marginTop">尊敬的壹号金融金融客户:</p>\
-    <p class="marginTop txtIndent">壹号金融金融交易平台(以下统一使用"我平台"代替)的业务是一种潜在收益和潜在风险较高的投资业务,对投资者的风险承受能力、理解风险程度、风险控制能力以及投资经验有较高的要求。存入资金前，您需要仔细阅读以下高风险揭示协议。</p>\
+    return '<p class="marginTop">尊敬的ADMINS金融客户:</p>\
+    <p class="marginTop txtIndent">ADMINS金融交易平台(以下统一使用"我平台"代替)的业务是一种潜在收益和潜在风险较高的投资业务,对投资者的风险承受能力、理解风险程度、风险控制能力以及投资经验有较高的要求。存入资金前，您需要仔细阅读以下高风险揭示协议。</p>\
     <p class="marginTop">一、郑重提示</p>\
     <p>电子交易业务具有高风险性，在做交易决定之前，请根据自身家庭、财务等具体情况慎重考虑以下问题：</p>\
     <p>1.交易资金来源：是否全部身家投入，养老钱、看病钱投入，子女教育资金投入，抵押贷款或其他借款投入？</p>\
@@ -312,8 +307,8 @@ function getRiskMsg () {
 function getTrueMsg() {
     return '<p class="safe">请阅读资金安全协议：</p>\
     <div>\
-        <div>尊敬的壹号金融金融客户:</div>\
-        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊敬的壹号金融金融(以下简称"我司")客户我们会间接为您提供电子商务平台支付服务,您拥有平台账户资金的使用所有权，您需要在我司交易平台注册账户并上传相关个人资料，您应接受我司对您资金结算的管理监督和检查。</div>\
+        <div>尊敬的ADMINS金融客户:</div>\
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;尊敬的ADMINS金融(以下简称"我司")客户我们会间接为您提供电子商务平台支付服务,您拥有平台账户资金的使用所有权，您需要在我司交易平台注册账户并上传相关个人资料，您应接受我司对您资金结算的管理监督和检查。</div>\
         <div>您将对使用该账户及密码进行的一切操作及言论负完全的责任，您同意：</div>\
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. 本公司通过您的用户名和密码识别您的指示，请您妥善保管您的用户名和密码，对于因密码泄露所致的损失，由您自行承担。您保证不向其他任何人泄露该账户及密码，亦不使用其他任何人的账号及密码。</div>\
         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. 如您发现有他人冒用或盗用您的账户及密码或任何其他未经合法授权之情形时，应立即以有效方式通知本公司，要求本公司暂停相关服务。同时，您理解本公司对您的请求采取行动 需 要合理期 限，在此之前，本公司对已执行的指令及(或)所导致的您的损失不承担任何责任。</div>\
@@ -338,20 +333,14 @@ function getMaxRetreatDesc() {
 function getAbountTitleContent() {
     return '<h2 class="desc-title">我们提供适合不同水平投资者的投资教育系统一站解决方案</h2>\
             <div class="desc-content">\
-                <p>壹号金融汇聚来自各大互联网, 金融公司的行业精英, 专注于通过产品, 科技改变金融行业.</p>\
+                <p>ADMINS汇聚来自各大互联网, 金融公司的行业精英, 专注于通过产品, 科技改变金融行业.</p>\
                 <p>在过去的三年中, 我们不断改进, 优化产品, 力求为投资者提供最好的使用体验.</p>\
             </div>\
         '
 }
 
 function getAboutContent() {
-    return '10-18 2017 : PC+WEB 2.1.1 发布上线,\
-            9-30 2017 : PC+WEB 2.1.0 发布上线,\
-            9-16 2017 : PC+WEB 2.0.4 发布上线,\
-            9-09 2017 : PC+WEB 2.0.3 发布上线,\
-            9-02 2017 : PC+WEB 2.0.2 发布上线,\
-            8-26 2017 : PC+WEB 2.0.1 发布上线,\
-            8-20 2017 : PC+WEB 2.0 发布上线,\
+    return '8-20 2017 : PC+WEB 2.0 发布上线,\
             7-01 2017 : 管理后台 1.3.1 发布上线,\
             5-10 2017 : 管理后台 1.3.0 发布上线,\
             1-23 2017 : 管理后台 1.2.0 发布上线,\
@@ -367,7 +356,7 @@ function getAbountImageUrl() {
 }
 
 function getIndexLogoUrl() {
-    return '../../img/wl/firstbroker/index_logo.jpg';
+    return '../../img/wl/admins/index_logo.jpg';
 }
 
 // 最低出金金额
@@ -377,7 +366,12 @@ function getMinWithdrawWL() {
 
 // 最低入金金金额
 function getMinDepositWL() {
-    return 300;
+    return 80;
+}
+
+//判断是否需要客服按钮
+function getService(){
+    return false;
 }
 
 //判断是否需要 入金后才开户,和点击出金时,未开户的话在开户
@@ -390,14 +384,14 @@ function getMaxDepositWL() {
     return 30000;
 }
 
-//支付页面新版UI
+//支付页面新版UI true:新版,false:旧版
 function getPayWayNewUi(){
     return true;
 }
 
 //新版 二级联动下拉框网点
 function getNewNetPoint(){
-    return false;
+    return true;
 }
 
 //新版 注册时,未注册邀请码,则在个人信息页可以修改邀请码
