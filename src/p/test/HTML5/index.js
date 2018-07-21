@@ -54,3 +54,13 @@ i.src="http://localhost:7878?cccc=2";
  $(".one")[0].innerHTML="<span style='color:red'>11111</span>"
 
    
+
+
+
+
+
+let iframe=document.getElementsByTagName('iframe')[0];
+iframe.onload=()=>{
+    
+    iframe.contentWindow.postMessage(11111111,"*");
+}

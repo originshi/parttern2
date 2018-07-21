@@ -8,7 +8,7 @@ require("babel-polyfill");
 var fs = require('fs');
 var path = require('path');
 var glob = require('glob');
-var root="observe";
+var root="HTML5";
 let demo_worker="demo_worker";
 module.exports = {
     entry: entries (`./src/p/test/${root}/*.js`),
